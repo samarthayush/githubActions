@@ -26,6 +26,6 @@ jobs:
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: NodejsApplication2024
+          app-name: NodejsApplication2026232
           publish-profile: ${{ secrets.AZURE_WEB_APP_SECRET_PROFILE }}
-          package: .
+          package: ${{github.workspace}}
